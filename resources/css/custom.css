@@ -34,7 +34,7 @@ body.login,
 body.pin{
 	background: #d2d6de url('http://localhost/salesmart/resources/images/salesmart/background.png') no-repeat;
 	background-position: center;	
-	background-size: 1500px;
+	background-size: 100%; /*1500px;*/
 	margin-top:0 !important;
 }
 

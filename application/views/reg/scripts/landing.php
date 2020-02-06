@@ -1,0 +1,22 @@
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="<?php echo base_url(JSPATH);?>/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="<?php echo base_url(JSPATH);?>/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="<?php echo base_url(JSPATH);?>/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="<?php echo base_url(JSPATH);?>/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="<?php echo base_url(JSPATH);?>/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="<?php echo base_url(JSPATH);?>/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="<?php echo base_url(JSPATH);?>/owl.carousel.min.js"></script>
+    <script src="<?php echo base_url(JSPATH);?>/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="<?php echo base_url(JSPATH);?>/slick.min.js"></script>
+    <script src="<?php echo base_url(JSPATH);?>/jquery.counterup.min.js"></script>
+    <script src="<?php echo base_url(JSPATH);?>/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="<?php echo base_url(JSPATH);?>/custom.js"></script>

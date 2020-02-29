@@ -1,0 +1,63 @@
+#store form#selectioncompany{
+	/*width:calc(100% - 100px);*/
+	/*border:1px solid red;*/
+}
+
+                #submit{
+                    color: white;
+                    border-color:white;
+                    width: 400px;
+                }
+
+                .radio-group{
+                    position: relative;
+                }
+
+                .radio{
+                    /*border: 2px solid lightblue;*/
+                    cursor:pointer;
+                    /*margin: 2px 0; */
+                }
+
+                .radio.selected{
+                    outline: 1.5em solid #fff;
+                    padding:.1em;
+                    flex:1 0 calc(50% - 35px);
+                }
+
+                .spacer{
+                	height:45px;
+                }
+
+                .store-grid{
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 1200px;
+                    min-width: 400px;
+                    width:800px;
+					flex-direction: unset !important;
+                }
+
+                .store-col{
+                    flex:1 0 calc(50% - 10px);
+                    margin:5px;
+                    padding:10px;
+                    height: calc(100vw / 8);
+                    max-height: calc(100vw / 8);
+                    min-height: calc(100vw / 8);
+                    border-radius: 0px !important;
+                    border: 10px solid #fff !important;
+                    text-align: left;
+                }
+
+                .store-name{
+                    color: #172290;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .store-address{
+                    color:black;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }

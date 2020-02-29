@@ -35,6 +35,12 @@
 		case 'landing': 
 						$this->load->view('reg/heads/landing');
 						break;
+		case 'account': 
+						$this->load->view('reg/heads/account');
+						break;
+		case 'history': 
+						$this->load->view('reg/heads/history');
+						break;
 		default:
 						$this->load->view('reg/heads/common');
 						break;

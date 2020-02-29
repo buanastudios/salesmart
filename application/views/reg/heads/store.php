@@ -1,8 +1,8 @@
-    <!-- PROMO HEADS -->
+    <!-- STORE HEADS -->
     <?php
         $themefolder = 'reg';
         $this->load->view($themefolder.'/heads/common'); 
         echo "\n";
     ?>
-    <!-- custom PROMO CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(CSSPATH);?>/custom-store.css">
+    <!-- CUSTOM STORE CSS -->
+    <link href="<?php echo base_url(CSSPATH);?>/custom-store.css<?='?'.mt_rand(); ?>" rel="stylesheet" type="text/css" />

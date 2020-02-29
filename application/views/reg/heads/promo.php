@@ -4,5 +4,5 @@
         $this->load->view($themefolder.'/heads/common'); 
         echo "\n";
     ?>
-    <!-- custom PROMO CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(CSSPATH);?>/custom-promo.css">
+    <!-- CUSTOM PROMO CSS -->
+    <link href="<?php echo base_url(CSSPATH);?>/custom-promo.css<?='?'.mt_rand(); ?>" rel="stylesheet" type="text/css" />

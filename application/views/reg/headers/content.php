@@ -1,8 +1,9 @@
     <!-- CONTENT HEADER -->
     <!--::header part start::-->
     <!-- <header class="main_menu home_menu"> -->    
-    <header class="header-area">
-        <div class="container-fluid">
+    <header class="header-area" style="<?=($this->router->class=="landing") ? "display:block !important": ""; ?>;">
+        <!-- <div class="container-fluid"> -->
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-light">
@@ -22,7 +23,7 @@
                             <input type="text" class="form-control mr-sm-0" type="search" placeholder="Search" aria-label="Search" />
                         </div>
                         </form>                     
-                        <span id="maincompanyname_group" class="navbar-text" style="height: 53px;"><a id="maincompanyname">PT COMPANY BERSAMA</a></span>
+                        <span id="maincompanyname_group" class="navbar-text" style="height: 53px"><a id="maincompanyname"><?=(strlen($this->session->userdata("company_name"))>0) ? $this->session->userdata("company_name") : "BUANA STUDIOS" ;?></a></span>
                         <span id="cartbutton_group" class="navbar-text " style="">
                             <a id="cartbutton" class="badge outter-badge">
                                 <img src="<?= base_url('').'resources/images/salesmart/cart-white.png';?>">
@@ -46,19 +47,20 @@
         <ul class="navbar-nav px-5 py-4 mr-auto">
             <li class="nav-item avatar">
                 <a class="nav-link p-0" href="account">
-                  <img src="<?php echo base_url(IMAGEPATH);?>/salesmart/photo-sakti.png" class="account_avatar rounded-circle z-depth-0"
-                    alt="avatar image" height="65">
-                    <div style="white-space: pre-wrap;width: 200px;"><span>Arti Hikmatullah Perbawana Sakti Buana</span></div>
+                  <img 
+                    src="<?=($this->session->userdata('user_photo') !== false) ? $this->session->userdata('user_photo') : base_url(IMAGEPATH).'/salesmart/photo-sakti.png'; ?>"
+                    class="account_avatar rounded-circle z-depth-0" alt="avatar image">
+                    <div class="account_name" style="white-space: pre-wrap;width: 200px;"><span id="account_name_placehoder"><?php echo $this->session->userdata("full_name"); ?><!-- Arti Hikmatullah Perbawana Sakti Buana --></span></div>
                 </a>
             </li>
             <li class="nav-item">                                    
-                <a href="client/choose">Choose Client</a>
+                <a class="nav-link chooseClient" href="#" data-toggle="modal" data-target="#chooseClientModal" >Choose Client</a>
             </li>                                                                                        
             <li class="nav-item">
-                <a href="store/choose">Choose Store</a>
+                <a class="nav-link chooseStore" href="#" data-toggle="modal" data-target="#chooseStoreModal" >Choose Store</a>
             </li>
             <li class="nav-item">
-                <a href="highlight/favproducts">Favorite</a>
+                <a href="product/favorite">Favorite</a>
             </li>
             <li class="nav-item">
                 <a href="history">History</a>
@@ -84,26 +86,47 @@
     </div>
 
     <div id="overlay"></div>
+    
+    <section class="upper-content only-on-mobile-header" style="<?=($this->router->class=="landing") ? "display:none !important": "display:block"; ?>;">
+        <header id="header-upper-area">
+            <nav class="navbar fixed-top">
+                <button class="btn back-button-on-mobile"><i class="fa fa-chevron-left"></i></button>
+                <span id="title_placeholder" class="text-center navbar-text"><?=$data['title'];?></span>
+            </nav>
+        </header>
+    </section>
 
-    <section id="only-on-mobile-bottom-header">
+    <!-- header on mobile start-->
+    <div class="spacer-on-mobile" id="header-on-mobile">
+        <div class="spacer" id="header-content-on-mobile">&nbsp;</div>
+    </div>
+    <!-- header on mobile end-->
+
+    <?php 
+        // echo ($this->router->class == "highlight") ? "active" : "";
+        // switch($this->router->class){
+
+        // }
+    ?>
+    <section class="bottom-content only-on-mobile-header">
         <header id="header-bottom-area">
-            <div class="navbar">
-                <a href="<?=base_url();?>" class="nav-link active">
+            <nav class="navbar fixed-bottom">
+                <a href="<?=base_url();?>" class="nav-link <?=($this->router->class == "landing") ? "active" : "";?>">
                     <img class="bottom-header-icon" src="<?= base_url('resources/images/salesmart/home-icon.png'); ?>" />
                     <div>Home</div>
                 </a>
-                <a href="<?=base_url("highlight/favproducts");?>" class="nav-link ">
+                <a href="<?=base_url("highlight/favproducts");?>" class="nav-link <?=($this->router->class == "highlight") ? "active" : "";?>">
                     <img class="bottom-header-icon" src="<?= base_url('resources/images/salesmart/favorite-icon.png'); ?>" />
                     <div>Favorite</div>
                 </a>
-                <a href="<?=base_url("history");?>" class="nav-link ">
+                <a href="<?=base_url("history");?>" class="nav-link <?=($this->router->class == "history") ? "active" : "";?>">
                     <img class="bottom-header-icon" src="<?= base_url('resources/images/salesmart/history-icon.png'); ?>" />
                     <div>History</div>
                 </a>
-                <a href="<?=base_url("account");?>" class="nav-link ">
+                <a href="<?=base_url("account");?>" class="nav-link <?=($this->router->class == "account") ? "active" : "";?>">
                     <img class="bottom-header-icon" src="<?= base_url('resources/images/salesmart/account-icon.png'); ?>" />
                     <div>Account</div>
                 </a>
-            </div>
+            </nav>
         </header>
     </section>

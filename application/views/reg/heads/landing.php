@@ -1,8 +1,8 @@
-    <!-- PROMO HEADS -->
+    <!-- LANDING HEADS -->
     <?php
         $themefolder = 'reg';
         $this->load->view($themefolder.'/heads/common'); 
         echo "\n";
     ?>
-    <!-- custom PROMO CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(CSSPATH);?>/custom-landing.css">
+    <!-- CUSTOM LANDING CSS -->
+    <link href="<?php echo base_url(CSSPATH);?>/custom-landing.css<?='?'.mt_rand(); ?>" rel="stylesheet" type="text/css" />

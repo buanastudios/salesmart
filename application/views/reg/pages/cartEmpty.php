@@ -2,7 +2,7 @@
         <div class="container">
             <div id="cart" class="row">                    
                 <div class="col-12">                    
-                    <h1>CART</h1>                    
+                    <h1 class="hide-on-mobile">CART</h1>                    
                     <div class="cart_box">
                         <div class="row">
                             <div class="col-12">

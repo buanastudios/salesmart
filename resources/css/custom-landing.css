@@ -1,0 +1,170 @@
+/*landing pages*/
+.bannerpromo_part {
+	height:350px !important;
+}
+.bannerpromo_part div.container{
+	
+/*	display:flex;
+	justify-content: center; 
+*/	
+}
+.bannerpromo_part .carousel-item  img{
+	height:350px !important;
+}
+
+.bannerpromo_part .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.category_part{
+	/*background-attachment: fixed;*/
+  	background-position: center; 
+	background-repeat: no-repeat;
+	background-image: url('../images/salesmart/background.png') !important;
+	/*background-size:2080px 400px;*/
+	background-size:100% 400px;
+	height:400px;
+	width:100%;
+	padding-top: 50px;
+	/*padding-top:22.5px;
+	padding-bottom:22.5px;*/
+}
+
+.hotproduct_part .card,
+.newproduct_part .card{
+	display:inline-block;
+	border:none;
+	padding-bottom:20px;
+}
+
+.hotproduct_part .product_image,
+.newproduct_part .product_image{
+	width:200px;
+	padding:0px;
+	margin:0px;
+}
+
+.hotproduct_part .product_title,
+.newproduct_part .product_title{
+	color: #000 !important;
+	font-weight:600 !important;
+	font-size: 18px !important;
+	padding-top:24px;
+}
+#orderThisMonth{
+	/*text-decoration: underline;*/
+	font-size:20px;
+	font-weight:600;
+	color:#276ba2;
+	border-bottom:1px solid #1873b8;
+}
+
+.category_row_card .card{
+	background-color: transparent !important;
+	width:130px !important;
+	border:none !important;
+	height:auto;
+}
+
+.category_row_card,
+.product_row_card{
+	display:flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;	
+	/*justify-content: space-between !important;*/
+	justify-content: space-around !important;
+}
+
+.category_row_card .card:first-child,
+.product_row_card .card:first-child{
+	margin-left:0px !important;
+}
+
+.product_row_card .card{
+	margin:10px !important;
+}
+
+.newproduct_part h4,
+.hotproduct_part h4{
+	color: black !important;
+	font-weight:500 !important;
+}
+
+.newproduct_part h4 a,
+.hotproduct_part h4 a{
+	color: black !important;
+	font-weight:500 !important;
+}
+
+.newproduct_part h4 a:hover,
+.hotproduct_part h4 a:hover{
+	color: black !important;
+	font-weight:500 !important;
+}
+
+.category_part h3,
+.newproduct_part h3,
+.hotproduct_part h3{
+	color: #2573a8 !important;
+	font-weight:500 !important;
+}
+
+.blueline{
+	border:3px solid #1c6fbb !important;
+}
+
+.hotproduct{
+	margin-top:30px;
+}
+
+.spacer{
+	height:45px;
+}
+
+.product_price{
+	color: #2573a8 !important;
+	font-weight:600 !important;
+}
+
+.discounted{
+	color:red !important;
+	text-decoration: line-through !important;
+	font-weight:600 !important;
+}
+
+.category_part h3{
+	color: white !important;
+	margin-bottom: 36px;
+}
+}
+
+img.category_image{
+	width:100%;
+	min-width:100px;
+}
+
+.category_text_underimage{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.bannerpromo_part .seeall{
+	padding-top:22px;
+	/*padding-bottom:22px;*/
+}
+
+.seeall a,
+.seeall a:hover{
+	color:black;
+	text-transform: uppercase;
+	font-size:14px;	
+}
+
+#s1 .spacer{
+	height:70px;
+}

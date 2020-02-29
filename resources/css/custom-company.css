@@ -1,0 +1,64 @@
+#company form#selectioncompany{
+	/*width:calc(100% - 100px);*/
+	/*border:1px solid red;*/
+}
+
+                .spacer{
+                	height:45px;
+                }
+
+                .company-grid{
+                    display: flex;
+                    flex-wrap: wrap;
+                    max-width: 1200px;
+                    min-width: 400px;
+					flex-direction: unset !important;
+                }
+
+                .company-col{
+                    flex:1 0 calc(50% - 10px);
+                    margin:5px;
+                    padding:0px;
+                    height: calc(100vw / 8);
+                    max-height: calc(100vw / 8);
+                    min-height: calc(100vw / 8);
+                    border-radius: 0px !important;
+                }
+
+                .company-col img{
+                    padding:10px;
+                    max-width: 100%;
+                    max-height: calc(100% - 30px);
+
+                }
+
+                .company-name{
+                    color: #1A72BA;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+                
+                #submit{
+					color: white;
+					border-color:white;
+                    width: 400px;
+                }
+
+				.radio-group{
+				    position: relative;
+				}
+
+				.radio{
+					/*border: 2px solid lightblue;*/
+					cursor:pointer;
+					/*margin: 2px 0; */
+				}
+                
+                .card{
+                    border:none;
+                }
+                .radio.selected{
+                 outline: 1.5em solid #fff !important;
+                    padding:.5em;
+
+				}

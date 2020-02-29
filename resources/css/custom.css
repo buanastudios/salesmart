@@ -32,9 +32,9 @@ body.company,
 body.store,
 body.login,
 body.pin{
-	background: #d2d6de url('http://localhost/salesmart/resources/images/salesmart/background.png') no-repeat;
+	background: #d2d6de url('../images/salesmart/background.png') no-repeat;
 	background-position: center;	
-	background-size: 100%; /*1500px;*/
+	background-size: 400%;
 	margin-top:0 !important;
 }
 
@@ -242,8 +242,8 @@ body div#pin{
 
 /*header*/
 
-#only-on-mobile-bottom-header{
-	display:none;
+.only-on-mobile-header{
+	display:none !important;
 }
 
 .border-right-1 {
@@ -257,8 +257,8 @@ body div#pin{
 .header-area{	
 	padding:0px;
 	margin:0px;		
-
-	background-image: url('http://localhost/salesmart/resources/images/salesmart/background.png') !important;
+	height:100px;
+	background-image: url('../images/salesmart/background.png') !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
   	background-position: center top; 
@@ -289,7 +289,7 @@ body div#pin{
 
 #navbarSupportedContent{
 	position:absolute;	
-	z-index: 99999999;	
+	z-index: 4;	
 	background:white;
 	/*?height: 100%;*/
 	width:100%;
@@ -298,7 +298,27 @@ body div#pin{
 #navbarSupportedContent .nav-link,
 #navbarSupportedContent .nav-item,
 #navbarSupportedContent .nav-item .nav-link{
-	color: black !important;
+	/*color: black !important;*/
+	color: #007bff !important;
+}
+
+#navbarSupportedContent .dropdown-item{
+	color: #007bff !important;
+}
+
+.account_avatar{
+	width:50px;
+}
+
+.account_name{
+	color: #000 !important;
+	font-weight: 700;
+}
+
+#navbarSupportedContent .nav-item{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-weight: 700;
 }
 
 #overlay {
@@ -411,7 +431,7 @@ footer{
 	padding-top:50px;	
 	padding-left:50px;
 
-	background-image: url('http://localhost/salesmart/resources/images/salesmart/background.png') !important;
+	background-image: url('../images/salesmart/background.png') !important;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
   	background-position: center bottom; 
@@ -428,6 +448,10 @@ footer{
 
 .footer-area  ul li a:hover {
   color: #fff !important;
+}
+
+.footer_2 ul li a{
+	white-space:nowrap;
 }
 
 #product_properties{
@@ -822,30 +846,6 @@ input[type=number]#product_order_qty {
 	 border-radius: 50%;
 }
 
-/*landing pages*/
-.blueline{
-	border:2px solid #1c6fbb;
+.hide-on-desktop{
+	display:none;
 }
-
-.category_part{
-	/*border:1px solid red;*/
-	background-image: url('http://localhost/salesmart/resources/images/salesmart/background.png') !important;
-	background-size:2080px 300px;
-	height:200px;
-	width:100%;
-}
-
-.hotproduct_part .card,
-.newproduct_part .card{
-	display:inline-block;
-	border:none;
-	padding-bottom:20px;
-}
-
-.hotproduct_part .product_image,
-.newproduct_part .product_image{
-	width:200px;
-	padding:0px;
-	margin:0px;
-}
-

@@ -1,0 +1,15 @@
+.product_info{
+	padding:10px;
+}
+
+.discounted{
+	color:red !important;
+	text-decoration: line-through !important;
+	font-weight:600 !important;
+}
+
+.product_buy_button{
+	background-color: #1a6fbb;
+	margin-top:20px;
+	width:100%;
+}

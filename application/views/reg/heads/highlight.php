@@ -1,8 +1,8 @@
-    <!-- PROMO HEADS -->
+    <!-- HIGHLIGHT HEADS -->
     <?php
         $themefolder = 'reg';
         $this->load->view($themefolder.'/heads/common'); 
         echo "\n";
     ?>
-    <!-- custom PROMO CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(CSSPATH);?>/custom-highlight.css">
+    <!-- CUSTOM HIGHLIGHT CSS -->
+    <link href="<?php echo base_url(CSSPATH);?>/custom-highlight.css<?='?'.mt_rand(); ?>" rel="stylesheet" type="text/css" />

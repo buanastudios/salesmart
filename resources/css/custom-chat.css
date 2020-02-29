@@ -1,0 +1,159 @@
+/*chat*/
+
+.myaccount{
+	/*padding:0px;	*/
+		
+}
+
+.myaccount .account_name{
+	line-height: 50px;
+	color: #1c6fbb !important;
+}
+
+.chat_box{	
+	border-radius: 5px; /*!important;*/
+	box-shadow: 0px 0px 5px 5px #ccc; /*!important;*/
+	padding: 20px; /*!important;*/
+	margin-left: 0px;/*!important;*/
+	margin-top: 20px; /*!important;*/
+	margin-bottom: 20px; /*!important;*/
+	width: 100%;/*!important;*/
+}
+
+.blueline{
+	border:3px solid #1c6fbb !important;
+}
+
+.chat-bubble{
+	border-radius: 5px;	
+	padding:10px;	
+	border:1px solid #ccc;		
+	display: flex;
+  	flex-direction: column;
+  	/*width: 30%;*/
+}
+
+.chat-bubble .chat-time{
+	align-self: flex-end;
+}
+
+.chat-row{
+  flex: 1 1 20%;
+  display: flex;
+  flex-direction: column;
+  /*overflow: auto;*/
+}
+
+.chat-right{
+	align-self: flex-end;
+}
+
+.chat-right div{
+	padding:10px;
+}
+
+.chat-left{
+	align-self: flex-start;
+}
+
+.chat-mutahadith{
+	background-color: #ccc;
+}
+
+.chat-mustamie{
+	background-color: #fff;
+}
+
+.product_info{
+	border-radius: 5px;
+	border:1px solid #ccc;	
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+	flex-direction: row;
+}
+
+.product_info,
+.product_info div{
+	padding:0px !important;
+	margin:0px;	
+}
+
+.product_info .left-column{
+	border-right:1px solid #ccc;	
+}
+
+.product_info .right-column p{
+	padding-left:10px;
+}
+
+.product_image{
+	border-radius: 30px !important;
+	border: none !important;
+	padding:10px !important;
+	width:100px;
+	height:auto;
+}
+
+.product_name{
+	padding-top:5px;
+	color: #000 !important;
+	font-weight:500 !important;	
+}
+
+.product_price{
+	color: #2573a8 !important;
+	font-weight:400 !important;
+}
+
+.discounted{
+	color:red !important;
+	text-decoration: line-through !important;
+	font-weight:400 !important;
+}
+
+/*.product_image{
+	transform: scale(0.5, 0.5);
+	-ms-transform: scale(0.5, 0.5);
+	-webkit-transform: scale(0.5, 0.5);
+	width:100px;
+	padding:0px !important;
+	height:auto;
+	border:1px solid blue;	
+}*/
+
+.tags{
+	color: #1c6fbb !important;
+}
+
+
+.chat-compose-row{
+	/*border-radius: 5px;	*/
+	padding:10px;	
+	/*border:1px solid #ccc;		*/
+	/*display: flex;*/
+  	/*flex-direction: row;	*/
+}
+
+.chat-compose-col{
+	border-radius: 5px;	
+	padding:10px;	
+	border:1px solid #ccc;		
+	display: flex;
+  	flex-direction: row;
+  	width:100%;
+}
+
+.chat-compose-col input{
+	border:none;
+	width:100%;
+	padding:10px;
+	text-align:left;
+	align-self:flex-start;
+}
+
+.chat-compose-col button{	
+	border:none;
+	align-self:flex-end;
+	font-weight:bold;
+}
